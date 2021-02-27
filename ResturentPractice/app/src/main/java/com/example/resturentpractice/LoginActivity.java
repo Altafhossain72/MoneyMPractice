@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
                 User user1 = response.body();
                 if(user1 != null){
                     if(user1.getEmail() != null){
-                        i = new Intent(getApplicationContext(), WelcomeActivity.class);
+                        i = new Intent(getApplicationContext(), Main2Activity.class);
                         startActivity(i);
                     }else{
                         Toast.makeText(getApplicationContext(), "Please check usrname/password", Toast.LENGTH_LONG).show();
